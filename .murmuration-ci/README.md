@@ -43,7 +43,7 @@ Attempted to integrate into the existing ParlAI pipeline using dynamic config. W
 - Too many heavy dependencies just for building static website content. Look at ways to separate unnecessary dependenies from buld step
 - Unit or other tests failing outside of website build
 - Long build time overall
-- * Due to initial inability to build via make, I looked at non-static solutions in case there were not html files available
-Built files for initial tests by running generate.py directly, excluding the /docs build
+- Due to initial inability to build via make, I looked at non-static solutions in case there were not html files available
+  Built files for initial tests by running generate.py directly, excluding the /docs build
 - Had permission issues adding ACLs and policies to my S3 bucket when using my own module, so switched to hashicorp's S3 module
 - I first applied Terraform to build an S3 bucket to use as the backend, then set another S3 bucket as the resource to be created in the pipeline
